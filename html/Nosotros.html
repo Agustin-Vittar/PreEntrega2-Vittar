@@ -5,31 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sitio Web de Nike</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="icon" type="img" href="../img/Logo.png">
-    <script src="https://kit.fontawesome.com/23f8a2214e.js" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estiloss.css">
+    <link rel="icon" type="img" href="img/Logo.png">
+    <script src="https://kit.fontawesome.com/23f8a2214e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div class="container-fluid">
-            <nav>
-                <ul class="row">
-                    <li class="col"><a href="./index.html">Inicio</a></li>
-                    <li class="col"><a href="./Colecciones.html">Colecciones</a></li>
-                    <li class="col"><a href="./Tiendas.html">Tiendas</a></li>
-                    <li class="col"><a href="#">Nosotros</a></li>
-                    <li class="col"><a href="./Contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="nav contenedor__nav" id="nav">
+            <a href="../index.html"><img src="../img/Logo.png" alt="Logo" class="nav__logo"></a>
+            <ul class="nav__links">
+                <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
+                <li class="nav__item"><a href="Colecciones.html" class="nav__link">Colecciones</a></li>
+                <li class="nav__item"><a href="Tiendas.html" class="nav__link">Tiendas</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Nosotros</a></li>
+                <li class="nav__item"><a href="Contacto.html" class="nav__link">Contacto</a></li>
+            </ul>
+
+            <a href="#nav" class="nav__hambur"><img src="../img/menu.svg" alt="menu" class="nav__icon"></a>
+            <a href="#" class="nav__close"><img src="../img/close.svg" alt="cerrar" class="nav__icon"></a>
+        </nav>
 
     </header>
     <div class="sup">
-        <a href="../html/index.html"><img src="../img/Logo.png" alt="Logo" class="logo"></a>
         <h1 class="title">Nike</h1>
     </div>
 
@@ -54,28 +55,40 @@
             creado por Carolyn Davidson, esquematización de una ala de la diosa que da nombre a la marca.
         </p>
     </div>
-    <footer class="piePag">
-        <div class="contenidoPie">
-            <div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.623612298259!2d-58.412056548664225!3d-34.58838916409925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca83b2d657a1%3A0x842bcbef147891ee!2sNike!5e0!3m2!1ses!2sar!4v1662156047005!5m2!1ses!2sar"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer>
+
+        <div class="container__footer">
+            <div class="box__footer">
+                <a href="" class="footer__a">LOCALES MÁS CERCANOS</a>
+                <a href="" class="footer__a">REGISTRATE PARA RECIBIR NOVEDADES</a>
             </div>
-            <div class="redes-container">
+            <div class="box__footer">
+                <h2>ACERCA DE NIKE</h2>
+                <a href="#" class="footer__a">Noticias</a>
+                <a href="#" class="footer__a">Empleo</a>
+                <a href="#" class="footer__a">Inversores</a>
+                <a href="#" class="footer__a">Sustentabilidad</a>
+            </div>
+            <div class="box__footer">
                 <ul>
-                    <li><a href="https://www.facebook.com/nike/" target="_blank"><i
-                                class="fa-brands fa-facebook-f facebook"></i></a></li>
+                    <h2>REDES SOCIALES</h2>
+                    <li><a href="https://www.facebook.com/nike/" target="_blank" class="icon"><i
+                                class="fa-brands fa-facebook-f facebook icon"></i></a></li>
                     <li><a href="https://www.instagram.com/nike/?hl=es" target="_blank"><i
-                                class="fa-brands fa-instagram instagram"></i></a></li>
-                    <li><a href="https://twitter.com/Nike?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                            target="_blank"><i class="fa-brands fa-twitter twitter"></i></a></li>
+                                class="fa-brands fa-instagram instagram icon"></i></a></li>
+                    <li><a
+                            href="https://twitter.com/Nike?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                            target="_blank"><i class="fa-brands fa-twitter twitter icon"></i></a></li>
                     <li><a href="https://www.youtube.com/c/nike" target="_blank"><i
-                                class="fa-brands fa-youtube youtube"></i></a></li>
+                                class="fa-brands fa-youtube youtube icon"></i></a></li>
 
                 </ul>
             </div>
         </div>
+        <div class="copy">
+            <small>&copy; 2022 <b>Nike, Inc.</b> - Todos los derechos reservados.</small>
+        </div>
+
     </footer>
 
     <!--Script Bootstrap-->
